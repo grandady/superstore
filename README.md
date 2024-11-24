@@ -61,8 +61,8 @@ As part of our business strategy, we aim to gain comprehensive insights into var
 These objectives will help us understand key performance metrics and identify opportunities for improvement in various areas of our superstore operations.
 
 ## Data Source
-Superstore Sales data: The primary data used for this analysis is the "salesdata.csv" file, containing detailed information about each sale made by the company
-[data source link]()
+Superstore Sales data: The primary data used for this analysis is the "superstore.csv" file, containing detailed information about each sale made by the company
+[data source link](https://github.com/grandady/superstore/blob/main/Sample%20-%20Superstore.csv)
 
 
 ## Methodologies for the Superstore Sales and Profit Analysis Project
