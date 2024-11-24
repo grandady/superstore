@@ -1,4 +1,4 @@
-# Superstore Sales and Profit Analysis: A Comprehensive Exploration Using SQL server and TABLEAU
+# Superstore Sales and Profit Analysis: A Comprehensive Exploration Using SQL Server and TABLEAU
 ***
 # Superstore.
 ![Superstore Sticker by katiemayy6](https://github.com/user-attachments/assets/eacfc52c-9001-409d-9357-e91a9e5c78b7)
@@ -111,67 +111,49 @@ By following these methodologies, we will ensure a thorough and systematic analy
 
 Here is a comprehensive column dictionary for the columns in your superstore dataset:
 
-1. **Row ID:** 
-   - **Description:** Unique identifier for each row in the dataset.
+1. **Row ID:**  Unique identifier for each row in the dataset.
 
-2. **Order ID:** 
-   - **Description:** Unique identifier for each order.
+2. **Order ID:**  Unique identifier for each order.
 
-3. **Order Date:** 
-   - **Description:** Date when the order was placed.
+3. **Order Date:** Date when the order was placed.
 
-4. **Ship Date:** 
-   - **Description:** Date when the order was shipped.
+4. **Ship Date:** Date when the order was shipped.
 
-5. **Ship Mode:** 
-   - **Description:** Method of shipping for the order (e.g., Standard Class, Second Class, First Class, Same Day).
+5. **Ship Mode:** Method of shipping for the order (e.g., Standard Class, Second Class, First Class, Same Day).
 
-6. **Customer ID:** 
-   - **Description:** Unique identifier for each customer.
+6. **Customer ID:** Unique identifier for each customer.
 
-7. **Customer Name:** 
-   - **Description:** Full name of the customer.
+7. **Customer Name:** Full name of the customer.
 
-8. **Segment:** 
-   - **Description:** Customer segment (e.g., Consumer, Corporate, Home Office).
+8. **Segment:** Customer segment (e.g., Consumer, Corporate, Home Office).
 
-9. **Country:** 
-   - **Description:** Country where the order was placed.
+9. **Country:** Country where the order was placed.
 
-10. **City:** 
-    - **Description:** City where the order was placed.
+10. **City:** City where the order was placed.
 
-11. **State:** 
-    - **Description:** State where the order was placed.
+11. **State:** State where the order was placed.
 
-12. **Postal Code:** 
-    - **Description:** Postal code of the location where the order was placed.
+12. **Postal Code:** Postal code of the location where the order was placed.
 
-13. **Region:** 
-    - **Description:** Region where the order was placed (e.g., East, West, Central, South).
+13. **Region:** Region where the order was placed (e.g., East, West, Central, South).
 
-14. **Product ID:** 
-    - **Description:** Unique identifier for each product.
+14. **Product ID:**  Unique identifier for each product.
 
-15. **Category:** 
-    - **Description:** High-level category of the product (e.g., Furniture, Office Supplies, Technology).
+15. **Category:** High-level category of the product (e.g., Furniture, Office Supplies, Technology).
 
-16. **Sub-Category:** 
-    - **Description:** Sub-category of the product within the main category (e.g., Chairs, Binders, Phones).
+16. **Sub-Category:** Sub-category of the product within the main category (e.g., Chairs, Binders, Phones).
 
-17. **Product Name:** 
-    - **Description:** Name of the product.
+17. **Product Name:** Name of the product.
 
-18. **Sales:** 
-    - **Description:** Sales amount for the order.
+18. **Sales:**  Sales amount for the order.
 
-19. **Quantity:** 
-    - **Description:** Number of units sold in the order.
+19. **Quantity:**  Number of units sold in the order.
 
-20. **Discount:** 
-    - **Description:** Discount applied to the order, represented as a decimal.
+20. **Discount:** Discount applied to the order, represented as a decimal.
 
-21. **Profit:** 
-    - **Description:** Profit amount for the order.
+21. **Profit:** Profit amount for the order.
 
-This column dictionary provides clear descriptions for each column in your superstore dataset, which will be useful for data management and analysis tasks. 
+
+### Exploration Data Analysis
+
+[link to sql file]()
