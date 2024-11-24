@@ -16,7 +16,7 @@
 ***
 
 
-##  Superstore Analysis Business Task
+##  Business Task
 
 As part of our business strategy, we aim to gain comprehensive insights into various aspects of our superstore operations. Below are the key objectives for the analysis:
 
@@ -107,7 +107,9 @@ To achieve the business objectives outlined, we will use a structured approach c
 
 By following these methodologies, we will ensure a thorough and systematic analysis of the superstore data, yielding valuable insights for business strategy and decision-making. 
 
-## Column Dictionary for Superstore Dataset
+## Data Exploration
+
+### Column Dictionary for Superstore Dataset
 
 Here is a comprehensive column dictionary for the columns in your superstore dataset:
 
