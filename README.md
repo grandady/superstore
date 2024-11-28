@@ -179,12 +179,12 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 ## Visualization
 
-### Performance Dashboard: A Deep Dive Into Sales and Customer Metrics
+### Superstore Sales Performance Dashboard
 ![sales Dashboard (1)](https://github.com/user-attachments/assets/8cde1604-81e0-40b7-b39a-a9aceef15294)
 [dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore1_17279793347590/salesDashboard)
 
 
-###  Comprehensive Overview: Sales Performance and Customer Engagement
+###  Sales Insights & Customer Performance Dashboard
 ![sales Dashboard 2](https://github.com/user-attachments/assets/79a80647-3ae8-4370-becf-a5f1cb4c75d5)
 [dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore2_17279793845490/salesDashboard2)
 
