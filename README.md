@@ -177,10 +177,15 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 [link to sql file]()
 
 
-## VISUALIZATION
+## Visualization
 
 ![sales Dashboard (1)](https://github.com/user-attachments/assets/8cde1604-81e0-40b7-b39a-a9aceef15294)
 [dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore1_17279793347590/salesDashboard)
+
+
+
+![sales Dashboard (1)](https://github.com/user-attachments/assets/68325c21-a093-443a-bcfa-aed976dd8196)
+[dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore2_17279793845490/salesDashboard2)
 
 
 
