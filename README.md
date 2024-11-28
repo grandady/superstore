@@ -179,19 +179,20 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 ## Visualization
 
+### Performance Dashboard: A Deep Dive Into Sales and Customer Metrics
 ![sales Dashboard (1)](https://github.com/user-attachments/assets/8cde1604-81e0-40b7-b39a-a9aceef15294)
 [dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore1_17279793347590/salesDashboard)
 
 
-
+###  Comprehensive Overview: Sales Performance and Customer Engagement
 ![sales Dashboard (1)](https://github.com/user-attachments/assets/68325c21-a093-443a-bcfa-aed976dd8196)
 [dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore2_17279793845490/salesDashboard2)
 
 
 
-### Anomalies and Recommendations:
+### Outliers and Recommendations:
 
-**Anomalies:**
+**Outliers:**
 
 1. **Negative Profit Margins:**
    - **Observation:** Several states (e.g., Texas, Ohio, Pennsylvania, Illinois) and certain customer segments show negative profit margins despite significant sales. Some customers even exceed -100% profit margins.
@@ -253,7 +254,7 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
    - **Off-Peak Promotions:** Implement promotions during lower-performing quarters to balance sales throughout the year.
    - **Inventory Management:** Ensure sufficient stock for high-demand periods to avoid stockouts.
 
-7. **Anomalies and Data Integrity:**
+7. **Outliers and Data Integrity:**
    - **Review Records:** Ensure accurate record-keeping for discounts and sales.
    - **Investigate Negatives:** Dive deeper into cases with negative profit margins to identify and resolve underlying issues.
 
