@@ -101,10 +101,6 @@ To achieve the business objectives outlined, we will use a structured approach c
    - **Data Formatting:** Ensure that all columns are in the appropriate data types (e.g., dates, strings, integers, decimals).
    - **Data Aggregation:** Aggregate data as necessary to facilitate analysis (e.g., total sales, total profit).
 
--  **Exploratory Data Analysis (EDA):**
-   - **Descriptive Statistics:** Calculate basic statistics to understand the dataset (e.g., mean, median, standard deviation).
-   - **Visualization:** Use Tableau to create initial visualizations for exploratory purposes.
-
 -  **Data Analysis:**
    - **Total Sales and Profit Analysis:** Calculate overall sales, profit, and profit margins.
    - **Temporal Analysis:** Analyze sales and profit by year and quarter.
@@ -141,7 +137,7 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 4. **Ship Date:** Date when the order was shipped.
 
-5. **Ship Mode:** Method of shipping for the order (e.g., Standard Class, Second Class, First Class, Same Day).
+5. **Ship Mode:** Method of shipping for the order (e.g., Standard Class, Second Class, First Class).
 
 6. **Customer ID:** Unique identifier for each customer.
 
@@ -179,6 +175,13 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 ### Exploration Data Analysis
 
 [link to sql file]()
+
+
+## VISUALIZATION
+
+![sales Dashboard (1)](https://github.com/user-attachments/assets/8cde1604-81e0-40b7-b39a-a9aceef15294)
+[dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore1_17279793347590/salesDashboard)
+
 
 
 ### Anomalies and Recommendations:
