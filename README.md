@@ -185,7 +185,7 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 
 ###  Comprehensive Overview: Sales Performance and Customer Engagement
-![sales Dashboard (1)](https://github.com/user-attachments/assets/68325c21-a093-443a-bcfa-aed976dd8196)
+![sales Dashboard 2](https://github.com/user-attachments/assets/79a80647-3ae8-4370-becf-a5f1cb4c75d5)
 [dashboard link](https://public.tableau.com/app/profile/kosemani.babajide/viz/superstore2_17279793845490/salesDashboard2)
 
 
