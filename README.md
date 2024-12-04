@@ -192,7 +192,7 @@ This focuses on the general analysis of **Total Sales, Total Profit, Profit Marg
 By analyzing these metrics, the project aims to optimize business operations, enhance profitability, and improve customer satisfaction, ensuring the Superstore's sustained growth and competitive advantage.
 
 
-**TOTAL SALES AND TOTAL PROFIT AND TOTAL PROFIT MARGIN**
+**TOTAL SALES , TOTAL PROFIT , TOTAL PROFIT MARGIN AND TOTAL DISCOUNT**
 
 ````sql
    --TOTAL SALES AND TOTAL PROFIT AND TOTAL PROFIT MARGIN 
@@ -228,7 +228,7 @@ ORDER BY
     Year,TotalProfits Desc;
 ````
 
-**TOTAL PROFITS, TOTAL SALES, PROFIT MARGIN and TOTAL DISCOUNT PER QUARTER**
+**TOTAL PROFITS, TOTAL SALES, PROFIT MARGIN AND TOTAL DISCOUNT PER QUARTER**
 
 ````sql
 -- Total Profits, Total sales, Profit Margin, and Total Discount per Quarter
@@ -249,8 +249,7 @@ ORDER BY
     Year, 
     Quarter;
 ````
-
-**The total sales, total profits, profit margin, and Total discount for each quarter across all years33
+**TOTAL SALES, TOTAL PROFITS, PROFIT MARGIN AND TOTAL DISCOUNT FOR EACH QUARTER ACROSS ALL YEARS**
 
 ````sql
 -- The total sales, total profits, profit margin, and Total discount for each quarter across all years
@@ -271,7 +270,7 @@ ORDER BY
 	 Quarters_From_2014_2017 DESC;
 ````
 
-**The region generates the highest sales, profits, profit margin, and Total Discounts**
+**THE REGION THAT GENETATE THE HIGHEST SALES , PROFIT MARGIN AND TOTAL DISCOUNTS**
 
 ````sql
 --  The region generates the highest sales, profits, profit margin and Total Discounts
@@ -291,7 +290,8 @@ TotalProfits DESC;
 ````
 
 
-**Total discount per state**
+**TOTAL DISCOUNT PER STATE**
+
 ````sql
 -- Total discount per state
 
@@ -307,6 +307,8 @@ ORDER BY
 	;
 ````
 
+**TOP PROFITABLE STATE**
+
 ````sql
 --Top Profitable State
 
@@ -319,6 +321,9 @@ FROM [dbo].[sales]
 GROUP BY State
 ORDER BY Total_Profits DESC
 ````
+
+
+**LEAST PROFITABLE STATE**
 
 ````sql
 -- Least Profitable state 
@@ -336,6 +341,8 @@ ORDER BY
 	Total_Profits
 ````
 
+**HIGH PERFORMING CITIES**
+
 ````sql
 -- High Performing Cities 
 
@@ -352,6 +359,8 @@ ORDER BY
 	Total_Profits DESC
 ````
 
+**TOTAL DISCOUNT PER CITY**
+
 ````sql
 -- Total discount per city
 
@@ -365,6 +374,8 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+
+**LOWEST PERFORMING CITIES**
 
 ````sql
 -- Lowest Performing Cities
@@ -382,6 +393,9 @@ ORDER BY
 Total_profits
 ````
 
+
+**CATEGORY WITH THE HIGHEST SALES AND PROFIT**
+
 ````sql
 -- category that  brings in the highest sales and profits
 
@@ -398,6 +412,8 @@ ORDER BY
 	Total_Profits DESC
 ````
 
+**SUB-CATEGORY WITH THE HIGHEST SALES AND PROFIT**
+
 ````sql
 -- Subcategory that  brings in the highest sales and profits
 
@@ -413,6 +429,9 @@ GROUP BY
 ORDER BY  
 	Total_Profits DESC
 ````
+
+
+**LOWEST PERFORMING REGION OF THE SUB-CATEGORY**
 
 ````sql
 -- lowest performing region of the Sub category 
@@ -432,6 +451,8 @@ ORDER BY
 	Total_Profits
 ````
 
+**TOTAL DISCOUNT PER CATEGORY**
+
 ````sql
 --Total Discount per category
 
@@ -444,6 +465,8 @@ GROUP BY
 ORDER BY 
 	total_discount DESC;
 ````
+
+**TOTAL DISCOUNT PER SUB-CATEGORY**
 
 ````sql
 --Total Discount per Sub category
@@ -459,19 +482,7 @@ ORDER BY
 	total_discount DESC;
 ````
 
-````sql
---Total Discount per  category
-
-SELECT	
-	category,
-	SUM(discount) AS total_discount
-FROM 
-	[dbo].[sales]
-GROUP BY 
-	 Category
-ORDER BY 
-	total_discount DESC;
-````
+**TOTAL DISCOUNT PER PRODUCT**
 
 ````sql
 -- Total discount per product
@@ -487,6 +498,7 @@ ORDER BY
 	total_discount DESC
 ````
 
+** TOP 20 PROFITABLEL PRODUCT**
 ````sql
 --TOP 20 products that are the most profitable
 
@@ -502,6 +514,9 @@ GROUP BY
 ORDER BY  
 	Total_Profits DESC
 ````
+
+
+**BOTTOM 20 LEAST PROFITABLE PRODUCT**
 
 ````sql
 --Bottom 20 products that are  least profitable
@@ -519,6 +534,9 @@ ORDER BY
 	Total_Profits
 ````
 
+
+**TOTAL DISCOUNT PER SEGMENT**
+
 ````sql
 -- Total discount per segment
 
@@ -533,6 +551,7 @@ ORDER BY
 	total_discount DESC
 ````
 
+**MOST SALES AND  PROFITABLE SEGMENT**
 ````sql
 --segment that  makes the most of our profits and sales
 
@@ -549,6 +568,8 @@ ORDER BY
 	Total_Profits DESC;
 ````
 
+**TOTAL SALES AND PROFIT BY SHIP MODE**
+
 ````sql
 -- Total sales and profit by ship mode
 
@@ -562,6 +583,8 @@ FROM [superstore].[dbo].[sales]
 	Total_Profits DESC
 ````
 
+
+** TOP CUSTOMERS
 ````sql
 -- Top customers 
   SELECT Customer_name, ROUND(SUM(Sales),2) as Total_Sales,
