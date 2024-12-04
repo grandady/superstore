@@ -175,24 +175,11 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 [link to sql file]()
 
-### TOTAL SALES AND TOTAL PROFIT, TOTAL PROFIT MARGIN AND TOTAL DISCOUNT
+### FINANCIAL METRICS : SALES, PROFIT, PROFIT MARGIN AND DISCOUNT
 
-**Objective:**
+**Objective:** The objective is to analyze the Superstore's financial metrics — total sales, total profit, profit margin, and total discount — from 2014 to 2017 to gain a comprehensive understanding of the store's financial performance.
 
-This focuses on the general analysis of **Total Sales, Total Profit, Profit Margin, and Total Discount** for the Superstore from 2014 to 2017. These metrics are crucial for gaining insights into the store's financial health, helping to identify successful areas and those needing improvement.
-
-1. **Total Sales:** Measures the overall revenue generated, providing insights into the store's ability to attract customers and drive revenue across different products, regions, and customer segments.
-
-2. **Total Profit:** Determines the actual financial gain after deducting all expenses from total sales, highlighting profitability and areas for cost management and pricing optimization.
-
-3. **Profit Margin:** Calculated by dividing total profit by total sales and expressing it as a percentage. It measures the efficiency of converting sales into profits, providing insights into operational efficiencies and pricing effectiveness.
-
-4. **Total Discount:** Analyzes the impact of discount strategies on sales and profitability, helping to understand if discounts effectively drive sales and improve customer satisfaction without significantly reducing profit margins.
-
-By analyzing these metrics, the project aims to optimize business operations, enhance profitability, and improve customer satisfaction, ensuring the Superstore's sustained growth and competitive advantage.
-
-
-**TOTAL SALES , TOTAL PROFIT , TOTAL PROFIT MARGIN AND TOTAL DISCOUNT**
+**Superstore Financial Metrics: Sales,Profit,Profit Margins and Discount**
 
 ````sql
    --TOTAL SALES AND TOTAL PROFIT AND TOTAL PROFIT MARGIN 
@@ -209,8 +196,9 @@ FROM
 
 
 
-**TOTAL SALES, TOTAL PROFIT, TOTAL PROFIT MARGIN  AND TOTAL DISCOUNT OF THE YEAR**
+**Yearly Superstore Financial Metrics**
 
+**Objective:** The objective of analyzing Yearly Superstore Financial Metrics is to gain a comprehensive understanding of the store's financial performance from 2014 to 2017. By evaluating total sales, total profit, profit margin, and total discount annually
 ````sql
 --TOTAL SALES, TOTAL PROFIT, TOTAL PROFIT MARGIN  AND TOTAL DISCOUNT OF THE YEAR
 
@@ -227,8 +215,9 @@ GROUP BY
 ORDER BY 
     Year,TotalProfits Desc;
 ````
+**Quarterly Superstore Financial Metrics**
 
-**TOTAL PROFITS, TOTAL SALES, PROFIT MARGIN AND TOTAL DISCOUNT PER QUARTER**
+**Objective:** The objective of analyzing Quarterly Superstore Financial Metrics is to gain a detailed and timely understanding of the store's financial performance throughout the year. By evaluating total sales, total profit, profit margin, and total discount on a quarterly basis from 2014 to 2017.
 
 ````sql
 -- Total Profits, Total sales, Profit Margin, and Total Discount per Quarter
@@ -249,7 +238,9 @@ ORDER BY
     Year, 
     Quarter;
 ````
-**TOTAL SALES, TOTAL PROFITS, PROFIT MARGIN AND TOTAL DISCOUNT FOR EACH QUARTER ACROSS ALL YEARS**
+**Finacial metrics For Each Quarter Across All the Years**
+
+**Objective:** The objective of analyzing quarterly financial metrics across all years is to achieve a detailed and continuous understanding of the Superstore's financial performance from 2014 to 2017.
 
 ````sql
 -- The total sales, total profits, profit margin, and Total discount for each quarter across all years
@@ -270,7 +261,9 @@ ORDER BY
 	 Quarters_From_2014_2017 DESC;
 ````
 
-**THE REGION THAT GENETATE THE HIGHEST SALES , PROFIT MARGIN AND TOTAL DISCOUNTS**
+**Region Dominating in Sales, Profit Margin, and Discount Metrics**
+
+**Objective:** The objective of identifying the region dominating in sales, profit margin, and discount metrics according to the project is to pinpoint the geographical area that achieves the highest financial performance. 
 
 ````sql
 --  The region generates the highest sales, profits, profit margin and Total Discounts
@@ -290,7 +283,9 @@ TotalProfits DESC;
 ````
 
 
-**TOTAL DISCOUNT PER STATE**
+**State-Level Discount Analysis**
+
+**Objective:** The objective of State-Level Discount Analysis is to assess the distribution and impact of discounts across different states.
 
 ````sql
 -- Total discount per state
@@ -307,7 +302,10 @@ ORDER BY
 	;
 ````
 
-**TOP PROFITABLE STATE**
+**State with the Highest Profitability**
+
+**Objective:** The objective of identifying the State with the Highest Profitability is to determine which state generates the most profit, allowing the Superstore to understand the factors contributing to its financial success
+
 
 ````sql
 --Top Profitable State
@@ -323,7 +321,10 @@ ORDER BY Total_Profits DESC
 ````
 
 
-**LEAST PROFITABLE STATE**
+**State with the Lowest Profitability**
+
+**Objective:** The objective of identifying the State with the Lowest Profitability is to determine which state generates the least profit, allowing the Superstore to understand the challenges and factors contributing to low financial performance.
+
 
 ````sql
 -- Least Profitable state 
@@ -341,7 +342,9 @@ ORDER BY
 	Total_Profits
 ````
 
-**HIGH PERFORMING CITIES**
+**Top-Performing Cities**
+
+**Objective:** The objective of identifying Top-Performing Cities is to determine which cities generate the highest financial performance,
 
 ````sql
 -- High Performing Cities 
@@ -359,7 +362,9 @@ ORDER BY
 	Total_Profits DESC
 ````
 
-**TOTAL DISCOUNT PER CITY**
+**City-Level Discount Analysis**
+
+**Objective:** The objective of City-Level Discount Analysis is to assess the distribution and impact of discounts across various cities. This analysis aims to identify patterns and trends in discount allocation, evaluate the effectiveness of discount strategies in driving sales, and understand regional variations.
 
 ````sql
 -- Total discount per city
