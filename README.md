@@ -281,26 +281,9 @@ GROUP BY
 ORDER BY  
 TotalProfits DESC;
 ````
+### STATE
 
 
-**STATE-LEVEL DISCOUNT ANALYSIS**
-
-**Objective:** The objective of State-Level Discount Analysis is to assess the distribution and impact of discounts across different states.
-
-````sql
--- Total discount per state
-
-	SELECT	
-	State,
-	SUM(discount) AS total_discount
-FROM 
-	[dbo].[sales]
-GROUP BY 
-	State
-ORDER BY 
-	total_discount DESC
-	;
-````
 
 **STATE WITH THE HIGHEST PROFITABILITY**
 
@@ -341,6 +324,26 @@ GROUP BY
 ORDER BY 
 	Total_Profits
 ````
+**STATE-LEVEL DISCOUNT ANALYSIS**
+
+**Objective:** The objective of State-Level Discount Analysis is to assess the distribution and impact of discounts across different states.
+
+````sql
+-- Total discount per state
+
+	SELECT	
+	State,
+	SUM(discount) AS total_discount
+FROM 
+	[dbo].[sales]
+GROUP BY 
+	State
+ORDER BY 
+	total_discount DESC
+	;
+````
+
+### CITY
 
 **TOP-PERFORMING CITIES**
 
@@ -362,23 +365,7 @@ ORDER BY
 	Total_Profits DESC
 ````
 
-**CITY-LEVEL DISCOUNT ANALYSIS**
 
-**Objective:** The objective of City-Level Discount Analysis is to assess the distribution and impact of discounts across various cities. This analysis aims to identify patterns and trends in discount allocation, evaluate the effectiveness of discount strategies in driving sales, and understand regional variations.
-
-````sql
--- Total discount per city
-
-	SELECT	
-	City,
-	SUM(discount) AS total_discount
-FROM 
-	[dbo].[sales]
-GROUP BY 
-	City
-ORDER BY 
-	total_discount DESC
-````
 
 **LOWEST PERFORMING CITIES**
 
@@ -399,7 +386,25 @@ GROUP BY
 ORDER BY
 Total_profits
 ````
+**CITY-LEVEL DISCOUNT ANALYSIS**
 
+**Objective:** The objective of City-Level Discount Analysis is to assess the distribution and impact of discounts across various cities. This analysis aims to identify patterns and trends in discount allocation, evaluate the effectiveness of discount strategies in driving sales, and understand regional variations.
+
+````sql
+-- Total discount per city
+
+	SELECT	
+	City,
+	SUM(discount) AS total_discount
+FROM 
+	[dbo].[sales]
+GROUP BY 
+	City
+ORDER BY 
+	total_discount DESC
+````
+
+### CATEGORY
 
 **TOP SALES AND PROFIT CATEGORY**
 **Objective:** The objective of identifying the Top Sales and Profit Category is to determine which product category generates the highest sales revenue and profit.
@@ -419,6 +424,24 @@ GROUP BY
 ORDER BY 
 	Total_Profits DESC
 ````
+**BREAKDOWN OF DISCOUNTS PER CATEGORY**
+
+**Objective:** The objective of the Breakdown of Discounts by Category is to analyze how discounts are distributed across different product categories.
+
+````sql
+--Total Discount per category
+
+SELECT 
+	category, SUM(discount) AS total_discount
+FROM 
+	[dbo].[sales]
+GROUP BY 
+	category
+ORDER BY 
+	total_discount DESC;
+````
+
+### SUB-CATEGORY
 
 **SUB-CATEGORY WITH THE MAXIMUM SALES AND PROFIT**
 
@@ -462,22 +485,7 @@ ORDER BY
 	Total_Profits
 ````
 
-**BREAKDOWN OF DISCOUNTS PER CATEGORY**
 
-**Objective:** The objective of the Breakdown of Discounts by Category is to analyze how discounts are distributed across different product categories.
-
-````sql
---Total Discount per category
-
-SELECT 
-	category, SUM(discount) AS total_discount
-FROM 
-	[dbo].[sales]
-GROUP BY 
-	category
-ORDER BY 
-	total_discount DESC;
-````
 
 **BREAKDOWN OF DISCOUNT PER SUB-CATEGORY**
 
@@ -497,23 +505,7 @@ ORDER BY
 	total_discount DESC;
 ````
 
-**DISCOUNT TOTALS FOR EACH PRODUCT**
-
-**Objective:** The objective of analyzing discount totals for each product is to understand how discounts are allocated across individual products
-
-````sql
--- Total discount per product
-
-	SELECT	
-	Product_Name,
-	SUM(discount) AS total_discount
-FROM 
-	[dbo].[sales]
-GROUP BY 
-	Product_Name
-ORDER BY 
-	total_discount DESC
-````
+### PRODUCTS
 
 **TOP 20 REVENUE-GENERATING PRODUCTS**
 **Objective:** The objective of identifying the Top 20 Revenue-Generating Products is to determine which products generate the highest revenue for the Superstore
@@ -553,25 +545,25 @@ GROUP BY
 ORDER BY  
 	Total_Profits
 ````
+**DISCOUNT TOTALS FOR EACH PRODUCT**
 
-
-**DISCOUNT TOTALS FOR EACH SEGMENTS**
-
-**objective:** The objective of analyzing Discount Totals for Each Segment is to understand how discounts are distributed across different customer segments.
+**Objective:** The objective of analyzing discount totals for each product is to understand how discounts are allocated across individual products
 
 ````sql
--- Total discount per segment
+-- Total discount per product
 
 	SELECT	
-	Segment,
+	Product_Name,
 	SUM(discount) AS total_discount
 FROM 
 	[dbo].[sales]
 GROUP BY 
-	Segment
+	Product_Name
 ORDER BY 
 	total_discount DESC
 ````
+
+### SEGMENTS
 
 **MOST PROFITABLE SALES SEGMENT**
 
@@ -591,6 +583,24 @@ GROUP BY
 	Segment
 ORDER BY 
 	Total_Profits DESC;
+````
+
+**DISCOUNT TOTALS FOR EACH SEGMENTS**
+
+**objective:** The objective of analyzing Discount Totals for Each Segment is to understand how discounts are distributed across different customer segments.
+
+````sql
+-- Total discount per segment
+
+	SELECT	
+	Segment,
+	SUM(discount) AS total_discount
+FROM 
+	[dbo].[sales]
+GROUP BY 
+	Segment
+ORDER BY 
+	total_discount DESC
 ````
 
 **REVENUE AND PROFIT DISTRIBUTION BY SHIP MODE**
