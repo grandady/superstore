@@ -18,48 +18,35 @@
 
 ##  Business Task
 
-**Objective:** 
+**1. Identify Top-Performing and Underperforming Sub-Categories:**
 
-Optimize business operations, increase profitability, and enhance customer satisfaction by addressing identified irregularities and implementing targeted recommendations based on sales, profit, discount, and customer data analysis.
+**Objective:** Determine the sub-categories with the highest and lowest sales and profit to understand success factors and address challenges.
 
-**Scope:** 
+**Metrics:** Sub-Category with Maximum Sales and Profit, Underperforming Region of the Sub-Category.
 
-The analysis covers data from 2014 to 2017, focusing on sales performance, profit margins, discount strategies, regional performance, customer segmentation, and shipping methods.
+**2. Analyze Discount Distribution:**
 
-### Key Areas of Focus:
+**Objective:** Evaluate how discounts are allocated across categories, sub-categories, products, and customer segments to optimize discount strategies.
 
-1. **Sales and Profit Analysis:**
-   - Evaluate total sales and profit margins across different products, categories, regions, and customer segments.
-   - Identify top and bottom performers to tailor strategies for enhancing profitability and growth.
+**Metrics:** Breakdown of Discounts by Category, Breakdown of Discounts by Sub-Category, Discount Totals for Each Product, Total Discount Allocation by Segment, Category-Wide Discount Metrics.
 
-2. **Discount Strategy:**
-   - Analyze the impact of discounts on sales and profit margins.
-   - Optimize discount strategies to balance customer attraction with profitability.
-   - Address irregularities where high discounts do not translate into proportional sales or profits.
+**3. Assess Revenue and Profit by Shipping Modes and Customer Segments:**
 
-3. **Regional Performance:**
-   - Assess performance disparities across different regions and states.
-   - Tailor marketing and sales strategies to address regional preferences and improve underperforming areas.
+**Objective:** Understand the impact of different shipping methods and customer segments on sales revenue and profitability to enhance logistics and marketing strategies.
 
-4. **Customer Segmentation:**
-   - Segment customers based on sales, profits, and discounts to identify high-value and low-performing segments.
-   - Develop targeted loyalty programs and feedback mechanisms to enhance customer satisfaction and retention.
+**Metrics:** Revenue and Profit Distribution by Ship Mode, Top Sales and Profit Segment, and Most Profitable Segment in Sales.
 
-5. **Shipping and Logistics:**
-   - Analyze the profitability of different shipping methods.
-   - Promote shipping methods with higher profit margins and optimize costs for standard shipping options.
+**4. Evaluate Product Performance:**
 
-6. **Product Performance:**
-   - Focus on promoting top-performing products and revising strategies for low-performing ones.
-   - Adjust pricing and inventory management to optimize product performance.
+**Objective:** Identify the top 20 revenue-generating products and the lowest 20 performing products by profit to replicate successful strategies and address underperformance.
 
-7. **Seasonal and Quarterly Sales:**
-   - Balance sales distribution throughout the year by implementing off-peak promotions.
-   - Ensure sufficient stock availability during high-demand periods to maximize sales.
+**Metrics:** Top 20 Revenue-Generating Products, Lowest 20 Performing Products by Profit.
 
-8. **Data Integrity and Record-Keeping:**
-   - Ensure accurate record-keeping for discounts and sales.
-   - Address data integrity issues to provide reliable analysis and insights.
+**5. Recognize and Analyze Top-Tier Clients:**
+
+**Objective:** Identify and analyze high-value clients to tailor strategies that enhance their satisfaction, retention, and profitability.
+
+**Metrics:** Top-Tier Clients.
 
 ### Deliverables:
 
@@ -124,7 +111,7 @@ To achieve the business objectives outlined, we will use a structured approach c
    - **Report Writing:** Document the methodology, analysis, findings, and recommendations in a comprehensive report.
    - **Presentation:** Prepare a presentation to communicate the results and recommendations to stakeholders.
 
-Following these methodologies will ensure a thorough and systematic analysis of the superstore data, yielding valuable insights for business strategy and decision-making.
+Following these methodologies  ensures a thorough and systematic analysis of the superstore data, yielding valuable insights for business strategy and decision-making.
 
 ## Data Exploration
 
@@ -160,7 +147,7 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 14. **Product ID:**  Unique identifier for each product.
 
-15. **Category:** High-level category of the product (e.g., Furniture, Office Supplies, Technology).
+15. **Category:** High-level product category (e.g., Furniture, Office Supplies, Technology).
 
 16. **Sub-Category:** Sub-category of the product within the main category (e.g., Chairs, Binders, Phones).
 
@@ -177,13 +164,13 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 ### Exploration Data Analysis
 
-[link to sql file]()
+[link to sql file](https://github.com/grandady/superstore/blob/main/sqlll.sql)
 
-### FINANCIAL METRICS : SALES, PROFIT, PROFIT MARGIN AND DISCOUNT
+### FINANCIAL METRICS: SALES, PROFIT, PROFIT MARGIN AND DISCOUNT
 
-**Objective:** The objective is to analyze the Superstore's financial metrics — total sales, total profit, profit margin, and total discount — from 2014 to 2017 to gain a comprehensive understanding of the store's financial performance.
+**Objective:** The objective is to analyze the Superstore's financial metrics — total sales, total profit, profit margin, and total discount — from 2014 to 2017 to understand the store's financial performance comprehensively.
 
-**SUPERSTORE FINANCIAL METRICS : SALES, PROFIT, PROFIT MARGINS AND TOTAL DISCOUNT**
+**SUPERSTORE FINANCIAL METRICS: SALES, PROFIT, PROFIT MARGINS AND TOTAL DISCOUNT**
 
 ````sql
    --TOTAL SALES AND TOTAL PROFIT AND TOTAL PROFIT MARGIN 
@@ -198,11 +185,12 @@ FROM
    [dbo].[sales]
 ````
 
-
+**Answer:**
+ The total sales amounted to $2,297,200.86, with total profits of $286,817.02, total discounts of $1,561.09, and a profit margin of 12.49%.
 
 **YEARLY SUPERSTORE FINANCIAL METRICS**
 
-**Objective:** The objective of analyzing Yearly Superstore Financial Metrics is to gain a comprehensive understanding of the store's financial performance from 2014 to 2017. By evaluating total sales, total profit, profit margin, and total discount annually
+**Objective:** The objective of analyzing Yearly Superstore Financial Metrics is to comprehensively understand the store's financial performance from 2014 to 2017. By evaluating total sales, total profit, profit margin, and total discount annually
 ````sql
 --TOTAL SALES, TOTAL PROFIT, TOTAL PROFIT MARGIN  AND TOTAL DISCOUNT OF THE YEAR
 
@@ -217,11 +205,14 @@ FROM
 GROUP BY 
     DATEPART(YEAR, Order_Date)
 ORDER BY 
-    Year,TotalProfits Desc;
+    Year, TotalProfits Desc;
 ````
+
+**Answer:** In 2014, the total sales were $484,247.50, total profits were $49,543.97, and total discounts were $315.46, with a profit margin of 10.23%. In 2015, total sales were $470,532.51, total profits were $61,618.60, and total discounts were $327.09, with a profit margin of 13.10%. In 2016, total sales were $609,205.60, total profits were $81,795.17, and total discounts were $400.32, with a profit margin of 13.43%. In 2017, total sales were $733,215.25, total profits were $93,859.27, and total discounts were $518.22, with a profit margin of 12.80%.
+
 **QUARTERLY SUPERSTORE FINANCIAL METRICS**
 
-**Objective:** The objective of analyzing Quarterly Superstore Financial Metrics is to gain a detailed and timely understanding of the store's financial performance throughout the year. By evaluating total sales, total profit, profit margin, and total discount on a quarterly basis from 2014 to 2017.
+**Objective:** The objective of analyzing Quarterly Superstore Financial Metrics is to gain a detailed and timely understanding of the store's financial performance throughout the year. By evaluating total sales, total profit, profit margin, and total discount quarterly from 2014 to 2017.
 
 ````sql
 -- Total Profits, Total sales, Profit Margin, and Total Discount per Quarter
@@ -242,7 +233,7 @@ ORDER BY
     Year, 
     Quarter;
 ````
-**FINANCIAL METRICS FOR EACH QUARTERS ACROSS ALL THE YEARS**
+**FINANCIAL METRICS FOR EACH QUARTER ACROSS ALL THE YEARS**
 
 **Objective:** The objective of analyzing quarterly financial metrics across all years is to achieve a detailed and continuous understanding of the Superstore's financial performance from 2014 to 2017.
 
@@ -265,6 +256,8 @@ ORDER BY
 	 Quarters_From_2014_2017 DESC;
 ````
 
+**Answer:** In the fourth quarter, total sales were $878,077.56, total profits were $111,041.66, and total discounts were $577.85, with a profit margin of 12.65%. In the third quarter, total sales were $613,932.11, total profits were $72,467.08, and total discounts were $427.05, with a profit margin of 11.8%. In the second quarter, total sales were $445,509.62, total profits were $55,284.54, and total discounts were $347.30, with a profit margin of 12.41%. In the first quarter, total sales were $359,681.58, total profits were $48,023.74, and total discounts were $208.89, with a profit margin of 13.35%.
+
 **REGION DOMINATING IN SALES, PROFIT MARGIN, and DISCOUNT METRICS**
 
 **Objective:** The objective of identifying the region dominating in sales, profit margin, and discount metrics according to the project is to pinpoint the geographical area that achieves the highest financial performance. 
@@ -285,9 +278,10 @@ GROUP BY
 ORDER BY  
 TotalProfits DESC;
 ````
+
+**Answer:** In the West region, total sales were $725,457.82, total profits were $108,418.45, total discounts were $350.20, and the profit margin was 14.94%. In the East region, total sales were $678,781.24, total profits were $91,522.78, total discounts were $414.00, and the profit margin was 13.48%. In the South region, total sales were $391,721.91, total profits were $47,169.43, total discounts were $238.55, and the profit margin was 12.04%. In the Central region, total sales were $501,239.89, total profits were $39,706.36, total discounts were $558.34, and the profit margin was 7.92%.
+
 ### STATE
-
-
 
 **STATE WITH THE HIGHEST PROFITABILITY**
 
@@ -306,6 +300,8 @@ FROM [dbo].[sales]
 GROUP BY State
 ORDER BY Total_Profits DESC
 ````
+
+**Answer:** The top 4 states are California, with total sales of $457,687.63, total profits of $76,381.39, and a profit margin of 16.69%, followed by New York, Washington, and Michigan, which ranks fourth with total sales of $76,269.61, total profits of $24,463.19, and a profit margin of 32.07%.
 
 
 **STATE WITH THE LOWEST PROFITABILITY**
@@ -328,6 +324,9 @@ GROUP BY
 ORDER BY 
 	Total_Profits
 ````
+
+**Answer:** These are the lowest-performing states in terms of profitability: Texas had total sales of $170,188.05, total losses of $25,729.36, and a profit margin of -15.12%. Ohio recorded total sales of $78,258.14, total losses of $16,971.38, and a profit margin of -21.69%. Pennsylvania achieved total sales of $116,511.91, total losses of $15,559.96, and a profit margin of -13.35%. Illinois reported total sales of $80,166.10, total losses of $12,607.89, and a profit margin of -15.73%.
+
 **STATE-LEVEL DISCOUNT ANALYSIS**
 
 **Objective:** The objective of State-Level Discount Analysis is to assess the distribution and impact of discounts across different states.
@@ -346,6 +345,7 @@ ORDER BY
 	total_discount DESC
 	;
 ````
+**Answer:** The states with the highest total discounts are Texas at $364.64, Pennsylvania at $192.90, Illinois at $191.90, Ohio at $152.40, and California at $145.60.
 
 ### CITY
 
@@ -354,7 +354,7 @@ ORDER BY
 **Objective:** The objective of identifying Top-Performing Cities is to determine which cities generate the highest financial performance,
 
 ````sql
--- High Performing Cities 
+-- High-Performing Cities 
 
 SELECT 
 	City,
@@ -369,11 +369,11 @@ ORDER BY
 	Total_Profits DESC
 ````
 
-
+**Answer:** The top profitable states are New York City, which had the highest total sales of $256,368.16 and total profits of $62,036.98 with a profit margin of 24.2%; Los Angeles, which recorded total sales of $175,851.34, total profits of $30,440.76, and a profit margin of 17.31%; Seattle, which achieved total sales of $119,540.74, total profits of $29,156.10, and a profit margin of 24.39%; and Detroit, which, as the fourth highest, reported total sales of $42,446.94, total profits of $13,181.79, and a profit margin of 31.05%.
 
 **LOWEST PERFORMING CITIES**
 
-**Objective:** The objective of identifying the lowest performing cities is to determine which cities generate the least financial performance,
+**Objective:** The objective of identifying the lowest-performing cities is to determine which cities generate the least financial performance,
 
 ````sql
 -- Lowest Performing Cities
@@ -390,6 +390,10 @@ GROUP BY
 ORDER BY
 Total_profits
 ````
+
+**Answer:** The lowest-performing cities in terms of profitability are Philadelphia, which had the lowest total sales of $109,077.01 and total losses of $13,837.77, with a profit margin of -12.69%; Houston, which recorded total sales of $64,504.76, total losses of $10,153.55, and a profit margin of -15.74%; San Antonio, which achieved total sales of $21,843.53, total losses of $7,299.05, and a profit margin of -33.42%; and Lancaster, which reported total sales of $9,891.46, total losses of $7,239.07, and a profit margin of -73.19%.
+
+
 **CITY-LEVEL DISCOUNT ANALYSIS**
 
 **Objective:** The objective of City-Level Discount Analysis is to assess the distribution and impact of discounts across various cities. This analysis aims to identify patterns and trends in discount allocation, evaluate the effectiveness of discount strategies in driving sales, and understand regional variations.
@@ -407,10 +411,12 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+**Answer:** The top 4 cities with the highest total discounts are Philadelphia with $175.50, Houston with $143.14, Chicago with $120.50, and Dallas with $56.30.
 
 ### CATEGORY
 
 **TOP SALES AND PROFIT CATEGORY**
+
 **Objective:** The objective of identifying the Top Sales and Profit Category is to determine which product category generates the highest sales revenue and profit.
 
 ````sql
@@ -428,6 +434,9 @@ GROUP BY
 ORDER BY 
 	Total_Profits DESC
 ````
+
+**Answer:** Technology had total sales of $836,154.03, total profits of $145,454.95, and a profit margin of 17.4%. Office Supplies recorded total sales of $719,047.03, total profits of $122,490.80, and a profit margin of 17.04%. Furniture achieved total sales of $741,999.79, total profits of $18,871.27, and a profit margin of 2.54%.
+
 **BREAKDOWN OF DISCOUNTS PER CATEGORY**
 
 **Objective:** The objective of the Breakdown of Discounts by Category is to analyze how discounts are distributed across different product categories.
@@ -444,6 +453,8 @@ GROUP BY
 ORDER BY 
 	total_discount DESC;
 ````
+
+**Answer:** Office Supplies had a total discount of $947.80, Furniture had a total discount of $368.89, and Technology had a total discount of $244.40.
 
 ### SUB-CATEGORY
 
@@ -462,17 +473,20 @@ SELECT
 FROM
 	[dbo].[sales]
 GROUP BY 
-	Category,Sub_Category
+	Category, Sub_Category
 ORDER BY  
 	Total_Profits DESC
 ````
 
+**Answer:** The top 3 subcategories are Copiers, which had total sales of $149,528.03, total profits of $55,617.82, and a profit margin of 37.2%; Phones, which recorded total sales of $330,007.05, total profits of $44,515.73, and a profit margin of 13.49%; and Accessories, which achieved total sales of $167,380.32, total profits of $41,936.64, and a profit margin of 25.05%.
+
+If you need any further adjustments or additional information, just let me know!
 
 **UNDERPERFORMING REGION OF THE SUB-CATEGORY**
 
 **Objective:** The objective of identifying the Underperforming Region of the Sub-Category is to determine which region generates the lowest sales and profit for a specific sub-category.
 ````sql
--- lowest performing region of the Sub category 
+-- the lowest-performing region of the Subcategory 
 
 SELECT
 	Region,
@@ -496,7 +510,7 @@ ORDER BY
 **Objective:** The objective of the Breakdown of Discounts by Sub-Category is to analyze how discounts are distributed across different product sub-categories.
 
 ````sql
---Total Discount per Sub category
+--Total Discount per Subcategory
 
 SELECT	
 	Sub_category,
@@ -508,6 +522,8 @@ GROUP BY
 ORDER BY 
 	total_discount DESC;
 ````
+
+**Answer:** The top 3 subcategories with the highest total discounts are Binders with $566.99, Phones with $137.40, and Furnishings with $132.40.
 
 ### PRODUCTS
 
@@ -530,7 +546,7 @@ GROUP BY
 ORDER BY  
 	Total_Profits DESC
 ````
-
+**Answer:** The top 3 products are the Canon imageCLASS 2200 Advanced Copier with total sales of $61,599.82, total profits of $25,199.93, and a profit margin of 40.91%; the Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind with total sales of $27,453.38, total profits of $7,753.04, and a profit margin of 28.24%; and the Hewlett Packard LaserJet 3310 Copier with total sales of $18,839.69, total profits of $6,983.88, and a profit margin of 37.07%.
 
 **LOWEST 20 PERFORMING PRODUCTS BY PROFIT**
 
@@ -551,6 +567,10 @@ GROUP BY
 ORDER BY  
 	Total_Profits
 ````
+
+**Answer:** The Cubify CubeX 3D Printer Double Head Print had total sales of $11,099.96 and total losses of $8,879.97, resulting in a profit margin of -80%. The Lexmark MX611dhe Monochrome Laser Printer recorded total sales of $16,829.90 and total losses of $4,589.97, with a profit margin of -27.27%. The Cubify CubeX 3D Printer Triple Head Print achieved total sales of $7,999.98 and total losses of $3,839.99, resulting in a profit margin of -48%.
+
+
 **DISCOUNT TOTALS FOR EACH PRODUCT**
 
 **Objective:** The objective of analyzing discount totals for each product is to understand how discounts are allocated across individual products
@@ -568,6 +588,8 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+
+**Answer:** The top 5 discounted products are Storex Dura Pro Binders with a discount of $7.20, Avery Non-Stick Binders with a discount of $6.80, GBC Instant Report Kit with a discount of $6.40, GBC Standard Recycled Report Covers, Clear Plastic Sheets with a discount of $5.90, and Avery Self-Adhesive Photo Pockets for Polaroid Photos with a discount of $5.90.
 
 ### SEGMENTS
 
@@ -591,7 +613,9 @@ ORDER BY
 	Total_Profits DESC;
 ````
 
-**DISCOUNT TOTALS FOR EACH SEGMENTS**
+**Answer:** The Consumer segment had total sales of $1,161,401.34, total profits of $134,119.21, and a profit margin of 11.55%. The Corporate segment recorded total sales of $706,146.36, total profits of $92,399.13, and a profit margin of 13.08%. The Home Office segment achieved total sales of $429,653.15, total profits of $60,298.68, and a profit margin of 14.03%.
+
+**DISCOUNT TOTALS FOR EACH SEGMENT**
 
 **objective:** The objective of analyzing Discount Totals for Each Segment is to understand how discounts are distributed across different customer segments.
 
@@ -608,6 +632,8 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+
+**Answer:** The Consumer segment had a total discount of $820.91, the Corporate segment had a total discount of $477.85, and the Home Office segment had a total discount of $262.33.
 
 **REVENUE AND PROFIT DISTRIBUTION BY SHIP MODE**
 
@@ -626,6 +652,7 @@ FROM [superstore].[dbo].[sales]
 	Total_Profits DESC
 ````
 
+**Answer:** Standard Class had total sales of $1,358,215.74, total profits of $164,508.79, and a profit margin of 12.11%. Second Class recorded total sales of $459,193.57, total profits of $57,446.64, and a profit margin of 12.51%. First Class achieved total sales of $351,428.42, total profits of $48,969.84, and a profit margin of 13.93%. Same Day reported total sales of $128,363.12, total profits of $15,891.76, and a profit margin of 12.38%.
 
 **TOP-TIER CLIENTS**
 
@@ -642,7 +669,7 @@ FROM [superstore].[dbo].[sales]
  Order By 
 	Total_Profits DESC
 ````
-
+**ANSWER:** The top 4 customers are Tamara Chand with total sales of $19,052.22, total profits of $8,981.32, and a profit margin of 47.14%; Raymond Buch with total sales of $15,117.34, total profits of $6,976.10, and a profit margin of 46.15%; Sanjit Chand with total sales of $14,142.33, total profits of $5,757.41, and a profit margin of 40.71%; and Hunter Lopez with total sales of $12,873.30, total profits of $5,622.43, and a profit margin of 43.68%.
 
 
 ## Visualization
