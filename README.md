@@ -179,7 +179,7 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 **Objective:** The objective is to analyze the Superstore's financial metrics — total sales, total profit, profit margin, and total discount — from 2014 to 2017 to gain a comprehensive understanding of the store's financial performance.
 
-**###Superstore Financial Metrics: Sales,Profit,Profit Margins and Discount**
+**### Superstore Financial Metrics: Sales,Profit,Profit Margins and Discount**
 
 ````sql
    --TOTAL SALES AND TOTAL PROFIT AND TOTAL PROFIT MARGIN 
@@ -196,7 +196,7 @@ FROM
 
 
 
-**###Yearly Superstore Financial Metrics**
+**### Yearly Superstore Financial Metrics**
 
 **Objective:** The objective of analyzing Yearly Superstore Financial Metrics is to gain a comprehensive understanding of the store's financial performance from 2014 to 2017. By evaluating total sales, total profit, profit margin, and total discount annually
 ````sql
@@ -215,7 +215,7 @@ GROUP BY
 ORDER BY 
     Year,TotalProfits Desc;
 ````
-**###Quarterly Superstore Financial Metrics**
+**### Quarterly Superstore Financial Metrics**
 
 **Objective:** The objective of analyzing Quarterly Superstore Financial Metrics is to gain a detailed and timely understanding of the store's financial performance throughout the year. By evaluating total sales, total profit, profit margin, and total discount on a quarterly basis from 2014 to 2017.
 
@@ -238,7 +238,7 @@ ORDER BY
     Year, 
     Quarter;
 ````
-**###Finacial metrics For Each Quarter Across All the Years**
+**### Finacial metrics For Each Quarter Across All the Years**
 
 **Objective:** The objective of analyzing quarterly financial metrics across all years is to achieve a detailed and continuous understanding of the Superstore's financial performance from 2014 to 2017.
 
@@ -261,7 +261,7 @@ ORDER BY
 	 Quarters_From_2014_2017 DESC;
 ````
 
-**###Region Dominating in Sales, Profit Margin, and Discount Metrics**
+**### Region Dominating in Sales, Profit Margin, and Discount Metrics**
 
 **Objective:** The objective of identifying the region dominating in sales, profit margin, and discount metrics according to the project is to pinpoint the geographical area that achieves the highest financial performance. 
 
@@ -283,7 +283,7 @@ TotalProfits DESC;
 ````
 
 
-**###State-Level Discount Analysis**
+**### State-Level Discount Analysis**
 
 **Objective:** The objective of State-Level Discount Analysis is to assess the distribution and impact of discounts across different states.
 
@@ -302,7 +302,7 @@ ORDER BY
 	;
 ````
 
-**###State with the Highest Profitability**
+**### State with the Highest Profitability**
 
 **Objective:** The objective of identifying the State with the Highest Profitability is to determine which state generates the most profit, allowing the Superstore to understand the factors contributing to its financial success
 
@@ -321,7 +321,7 @@ ORDER BY Total_Profits DESC
 ````
 
 
-**###State with the Lowest Profitability**
+**### State with the Lowest Profitability**
 
 **Objective:** The objective of identifying the State with the Lowest Profitability is to determine which state generates the least profit, allowing the Superstore to understand the challenges and factors contributing to low financial performance.
 
@@ -342,7 +342,7 @@ ORDER BY
 	Total_Profits
 ````
 
-**###Top-Performing Cities**
+**### Top-Performing Cities**
 
 **Objective:** The objective of identifying Top-Performing Cities is to determine which cities generate the highest financial performance,
 
@@ -362,7 +362,7 @@ ORDER BY
 	Total_Profits DESC
 ````
 
-**###City-Level Discount Analysis**
+**### City-Level Discount Analysis**
 
 **Objective:** The objective of City-Level Discount Analysis is to assess the distribution and impact of discounts across various cities. This analysis aims to identify patterns and trends in discount allocation, evaluate the effectiveness of discount strategies in driving sales, and understand regional variations.
 
@@ -380,7 +380,7 @@ ORDER BY
 	total_discount DESC
 ````
 
-**###LOWEST PERFORMING CITIES**
+**### OWEST PERFORMING CITIES**
 
 **Objective:** The objective of identifying the lowest performing cities is to determine which cities generate the least financial performance,
 
