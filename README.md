@@ -185,6 +185,9 @@ FROM
    [dbo].[sales]
 ````
 
+![sspr](https://github.com/user-attachments/assets/c3e30415-2352-463d-b8f3-c2f2f1abfbc0)
+
+
 **Answer:**
  The total sales amounted to $2,297,200.86, with total profits of $286,817.02, total discounts of $1,561.09, and a profit margin of 12.49%.
 
@@ -207,6 +210,9 @@ GROUP BY
 ORDER BY 
     Year, TotalProfits Desc;
 ````
+
+![sspr year](https://github.com/user-attachments/assets/9531eab7-25f3-4e78-93c1-a8fc73108d7c)
+
 
 **Answer:** In 2014, the total sales were $484,247.50, total profits were $49,543.97, and total discounts were $315.46, with a profit margin of 10.23%. In 2015, total sales were $470,532.51, total profits were $61,618.60, and total discounts were $327.09, with a profit margin of 13.10%. In 2016, total sales were $609,205.60, total profits were $81,795.17, and total discounts were $400.32, with a profit margin of 13.43%. In 2017, total sales were $733,215.25, total profits were $93,859.27, and total discounts were $518.22, with a profit margin of 12.80%.
 
@@ -256,6 +262,9 @@ ORDER BY
 	 Quarters_From_2014_2017 DESC;
 ````
 
+![sspr across](https://github.com/user-attachments/assets/ca801ec2-0864-467a-a2b6-99c5869ef51d)
+
+
 **Answer:** In the fourth quarter, total sales were $878,077.56, total profits were $111,041.66, and total discounts were $577.85, with a profit margin of 12.65%. In the third quarter, total sales were $613,932.11, total profits were $72,467.08, and total discounts were $427.05, with a profit margin of 11.8%. In the second quarter, total sales were $445,509.62, total profits were $55,284.54, and total discounts were $347.30, with a profit margin of 12.41%. In the first quarter, total sales were $359,681.58, total profits were $48,023.74, and total discounts were $208.89, with a profit margin of 13.35%.
 
 **REGION DOMINATING IN SALES, PROFIT MARGIN, and DISCOUNT METRICS**
@@ -279,6 +288,9 @@ ORDER BY
 TotalProfits DESC;
 ````
 
+![sspr region](https://github.com/user-attachments/assets/5a53a96b-d5e8-463e-92c5-3414993f8403)
+
+
 **Answer:** In the West region, total sales were $725,457.82, total profits were $108,418.45, total discounts were $350.20, and the profit margin was 14.94%. In the East region, total sales were $678,781.24, total profits were $91,522.78, total discounts were $414.00, and the profit margin was 13.48%. In the South region, total sales were $391,721.91, total profits were $47,169.43, total discounts were $238.55, and the profit margin was 12.04%. In the Central region, total sales were $501,239.89, total profits were $39,706.36, total discounts were $558.34, and the profit margin was 7.92%.
 
 ### STATE
@@ -300,6 +312,9 @@ FROM [dbo].[sales]
 GROUP BY State
 ORDER BY Total_Profits DESC
 ````
+
+![sspr state](https://github.com/user-attachments/assets/5b7dcc0e-f543-4cd1-b099-bd809af80364)
+
 
 **Answer:** The top 4 states are California, with total sales of $457,687.63, total profits of $76,381.39, and a profit margin of 16.69%, followed by New York, Washington, and Michigan, which ranks fourth with total sales of $76,269.61, total profits of $24,463.19, and a profit margin of 32.07%.
 
@@ -325,6 +340,9 @@ ORDER BY
 	Total_Profits
 ````
 
+![sspr statelow](https://github.com/user-attachments/assets/9dd11239-ffbc-407a-9556-c41f36d722bd)
+
+
 **Answer:** These are the lowest-performing states in terms of profitability: Texas had total sales of $170,188.05, total losses of $25,729.36, and a profit margin of -15.12%. Ohio recorded total sales of $78,258.14, total losses of $16,971.38, and a profit margin of -21.69%. Pennsylvania achieved total sales of $116,511.91, total losses of $15,559.96, and a profit margin of -13.35%. Illinois reported total sales of $80,166.10, total losses of $12,607.89, and a profit margin of -15.73%.
 
 **STATE-LEVEL DISCOUNT ANALYSIS**
@@ -345,6 +363,10 @@ ORDER BY
 	total_discount DESC
 	;
 ````
+
+![sspr state discount](https://github.com/user-attachments/assets/99d7f87a-301e-4f58-8137-9d1792428aa6)
+
+
 **Answer:** The states with the highest total discounts are Texas at $364.64, Pennsylvania at $192.90, Illinois at $191.90, Ohio at $152.40, and California at $145.60.
 
 ### CITY
@@ -369,6 +391,9 @@ ORDER BY
 	Total_Profits DESC
 ````
 
+![sspr city](https://github.com/user-attachments/assets/47ff32d0-e879-49ea-9af6-cbf91d0e9615)
+
+
 **Answer:** The top profitable states are New York City, which had the highest total sales of $256,368.16 and total profits of $62,036.98 with a profit margin of 24.2%; Los Angeles, which recorded total sales of $175,851.34, total profits of $30,440.76, and a profit margin of 17.31%; Seattle, which achieved total sales of $119,540.74, total profits of $29,156.10, and a profit margin of 24.39%; and Detroit, which, as the fourth highest, reported total sales of $42,446.94, total profits of $13,181.79, and a profit margin of 31.05%.
 
 **LOWEST PERFORMING CITIES**
@@ -391,6 +416,9 @@ ORDER BY
 Total_profits
 ````
 
+![sspr city low](https://github.com/user-attachments/assets/b249c310-d94e-4c69-a4e8-60be5c829848)
+
+
 **Answer:** The lowest-performing cities in terms of profitability are Philadelphia, which had the lowest total sales of $109,077.01 and total losses of $13,837.77, with a profit margin of -12.69%; Houston, which recorded total sales of $64,504.76, total losses of $10,153.55, and a profit margin of -15.74%; San Antonio, which achieved total sales of $21,843.53, total losses of $7,299.05, and a profit margin of -33.42%; and Lancaster, which reported total sales of $9,891.46, total losses of $7,239.07, and a profit margin of -73.19%.
 
 
@@ -411,6 +439,10 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+
+![sspr city discount](https://github.com/user-attachments/assets/22c64f05-c6a7-428c-a1cd-e03c3fedd594)
+
+
 **Answer:** The top 4 cities with the highest total discounts are Philadelphia with $175.50, Houston with $143.14, Chicago with $120.50, and Dallas with $56.30.
 
 ### CATEGORY
@@ -435,6 +467,10 @@ ORDER BY
 	Total_Profits DESC
 ````
 
+![sspr category](https://github.com/user-attachments/assets/1cb409d0-7897-4e86-b726-a1b40527bc85)
+
+
+
 **Answer:** Technology had total sales of $836,154.03, total profits of $145,454.95, and a profit margin of 17.4%. Office Supplies recorded total sales of $719,047.03, total profits of $122,490.80, and a profit margin of 17.04%. Furniture achieved total sales of $741,999.79, total profits of $18,871.27, and a profit margin of 2.54%.
 
 **BREAKDOWN OF DISCOUNTS PER CATEGORY**
@@ -453,6 +489,9 @@ GROUP BY
 ORDER BY 
 	total_discount DESC;
 ````
+
+![sspr category discount](https://github.com/user-attachments/assets/4975f8b3-05d1-4e02-985c-bdea9eb7a73c)
+
 
 **Answer:** Office Supplies had a total discount of $947.80, Furniture had a total discount of $368.89, and Technology had a total discount of $244.40.
 
@@ -477,6 +516,10 @@ GROUP BY
 ORDER BY  
 	Total_Profits DESC
 ````
+
+![sspr sub category](https://github.com/user-attachments/assets/06eefeeb-6c49-40df-9aee-a510b45c648c)
+
+
 
 **Answer:** The top 3 subcategories are Copiers, which had total sales of $149,528.03, total profits of $55,617.82, and a profit margin of 37.2%; Phones, which recorded total sales of $330,007.05, total profits of $44,515.73, and a profit margin of 13.49%; and Accessories, which achieved total sales of $167,380.32, total profits of $41,936.64, and a profit margin of 25.05%.
 
@@ -503,6 +546,8 @@ ORDER BY
 	Total_Profits
 ````
 
+![sspr region sub category](https://github.com/user-attachments/assets/6fe60417-503a-4b73-a0a2-0a0dd8fe917c)
+
 
 
 **BREAKDOWN OF DISCOUNT PER SUB-CATEGORY**
@@ -522,6 +567,9 @@ GROUP BY
 ORDER BY 
 	total_discount DESC;
 ````
+
+![sspr sub discount](https://github.com/user-attachments/assets/f49ef52d-9826-4a0f-a831-7e770ae2af08)
+
 
 **Answer:** The top 3 subcategories with the highest total discounts are Binders with $566.99, Phones with $137.40, and Furnishings with $132.40.
 
@@ -546,6 +594,9 @@ GROUP BY
 ORDER BY  
 	Total_Profits DESC
 ````
+
+![sspr top 20](https://github.com/user-attachments/assets/51cc4e1a-c1aa-4721-a497-80191f72a19d)
+
 **Answer:** The top 3 products are the Canon imageCLASS 2200 Advanced Copier with total sales of $61,599.82, total profits of $25,199.93, and a profit margin of 40.91%; the Fellowes PB500 Electric Punch Plastic Comb Binding Machine with Manual Bind with total sales of $27,453.38, total profits of $7,753.04, and a profit margin of 28.24%; and the Hewlett Packard LaserJet 3310 Copier with total sales of $18,839.69, total profits of $6,983.88, and a profit margin of 37.07%.
 
 **LOWEST 20 PERFORMING PRODUCTS BY PROFIT**
@@ -568,6 +619,9 @@ ORDER BY
 	Total_Profits
 ````
 
+![sspr bottom 20](https://github.com/user-attachments/assets/fd2cec64-f6d9-4516-947a-806d7c2eb1ba)
+
+
 **Answer:** The Cubify CubeX 3D Printer Double Head Print had total sales of $11,099.96 and total losses of $8,879.97, resulting in a profit margin of -80%. The Lexmark MX611dhe Monochrome Laser Printer recorded total sales of $16,829.90 and total losses of $4,589.97, with a profit margin of -27.27%. The Cubify CubeX 3D Printer Triple Head Print achieved total sales of $7,999.98 and total losses of $3,839.99, resulting in a profit margin of -48%.
 
 
@@ -588,6 +642,9 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+
+![sspr product discount](https://github.com/user-attachments/assets/ce8d332b-75dc-4a11-9d02-18e4958c4cf0)
+
 
 **Answer:** The top 5 discounted products are Storex Dura Pro Binders with a discount of $7.20, Avery Non-Stick Binders with a discount of $6.80, GBC Instant Report Kit with a discount of $6.40, GBC Standard Recycled Report Covers, Clear Plastic Sheets with a discount of $5.90, and Avery Self-Adhesive Photo Pockets for Polaroid Photos with a discount of $5.90.
 
@@ -613,6 +670,9 @@ ORDER BY
 	Total_Profits DESC;
 ````
 
+![sspr segments](https://github.com/user-attachments/assets/041b0d72-59f7-4f67-b371-82c00b54c74d)
+
+
 **Answer:** The Consumer segment had total sales of $1,161,401.34, total profits of $134,119.21, and a profit margin of 11.55%. The Corporate segment recorded total sales of $706,146.36, total profits of $92,399.13, and a profit margin of 13.08%. The Home Office segment achieved total sales of $429,653.15, total profits of $60,298.68, and a profit margin of 14.03%.
 
 **DISCOUNT TOTALS FOR EACH SEGMENT**
@@ -633,6 +693,9 @@ ORDER BY
 	total_discount DESC
 ````
 
+![sspr segment discount](https://github.com/user-attachments/assets/07b4af54-8f38-4555-b4cf-f6f7a89f642f)
+
+
 **Answer:** The Consumer segment had a total discount of $820.91, the Corporate segment had a total discount of $477.85, and the Home Office segment had a total discount of $262.33.
 
 **REVENUE AND PROFIT DISTRIBUTION BY SHIP MODE**
@@ -652,6 +715,9 @@ FROM [superstore].[dbo].[sales]
 	Total_Profits DESC
 ````
 
+![sspr shipmode](https://github.com/user-attachments/assets/e585c2ba-8dcf-45cf-9918-ceed363c3907)
+
+
 **Answer:** Standard Class had total sales of $1,358,215.74, total profits of $164,508.79, and a profit margin of 12.11%. Second Class recorded total sales of $459,193.57, total profits of $57,446.64, and a profit margin of 12.51%. First Class achieved total sales of $351,428.42, total profits of $48,969.84, and a profit margin of 13.93%. Same Day reported total sales of $128,363.12, total profits of $15,891.76, and a profit margin of 12.38%.
 
 **TOP-TIER CLIENTS**
@@ -669,6 +735,10 @@ FROM [superstore].[dbo].[sales]
  Order By 
 	Total_Profits DESC
 ````
+
+![sspr top customer](https://github.com/user-attachments/assets/856863fc-810e-4789-9a62-69f5a36ec4fc)
+
+
 **ANSWER:** The top 4 customers are Tamara Chand with total sales of $19,052.22, total profits of $8,981.32, and a profit margin of 47.14%; Raymond Buch with total sales of $15,117.34, total profits of $6,976.10, and a profit margin of 46.15%; Sanjit Chand with total sales of $14,142.33, total profits of $5,757.41, and a profit margin of 40.71%; and Hunter Lopez with total sales of $12,873.30, total profits of $5,622.43, and a profit margin of 43.68%.
 
 
