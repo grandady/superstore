@@ -179,7 +179,7 @@ Here is a comprehensive column dictionary for the columns in your superstore dat
 
 **Objective:** The objective is to analyze the Superstore's financial metrics — total sales, total profit, profit margin, and total discount — from 2014 to 2017 to gain a comprehensive understanding of the store's financial performance.
 
-**### Superstore Financial Metrics: Sales,Profit,Profit Margins and Discount**
+**SUPERSTORE FINANCIAL METRICS : SALES, PROFIT, PROFIT MARGINS AND TOTAL DISCOUNT**
 
 ````sql
    --TOTAL SALES AND TOTAL PROFIT AND TOTAL PROFIT MARGIN 
@@ -196,7 +196,7 @@ FROM
 
 
 
-**### Yearly Superstore Financial Metrics**
+**YEARLY SUPERSTORE FINANCIAL METRICS**
 
 **Objective:** The objective of analyzing Yearly Superstore Financial Metrics is to gain a comprehensive understanding of the store's financial performance from 2014 to 2017. By evaluating total sales, total profit, profit margin, and total discount annually
 ````sql
@@ -215,7 +215,7 @@ GROUP BY
 ORDER BY 
     Year,TotalProfits Desc;
 ````
-**### Quarterly Superstore Financial Metrics**
+**QUARTERLY SUPERSTORE FINANCIAL METRICS**
 
 **Objective:** The objective of analyzing Quarterly Superstore Financial Metrics is to gain a detailed and timely understanding of the store's financial performance throughout the year. By evaluating total sales, total profit, profit margin, and total discount on a quarterly basis from 2014 to 2017.
 
@@ -238,7 +238,7 @@ ORDER BY
     Year, 
     Quarter;
 ````
-**### Finacial metrics For Each Quarter Across All the Years**
+**FINANCIAL METRICS FOR EACH QUARTERS ACROSS ALL THE YEARS**
 
 **Objective:** The objective of analyzing quarterly financial metrics across all years is to achieve a detailed and continuous understanding of the Superstore's financial performance from 2014 to 2017.
 
@@ -261,7 +261,7 @@ ORDER BY
 	 Quarters_From_2014_2017 DESC;
 ````
 
-**### Region Dominating in Sales, Profit Margin, and Discount Metrics**
+**REGION DOMINATING IN SALES, PROFIT MARGIN, and DISCOUNT METRICS**
 
 **Objective:** The objective of identifying the region dominating in sales, profit margin, and discount metrics according to the project is to pinpoint the geographical area that achieves the highest financial performance. 
 
@@ -283,7 +283,7 @@ TotalProfits DESC;
 ````
 
 
-**### State-Level Discount Analysis**
+**STATE-LEVEL DISCOUNT ANALYSIS**
 
 **Objective:** The objective of State-Level Discount Analysis is to assess the distribution and impact of discounts across different states.
 
@@ -302,7 +302,7 @@ ORDER BY
 	;
 ````
 
-**### State with the Highest Profitability**
+**STATE WITH THE HIGHEST PROFITABILITY**
 
 **Objective:** The objective of identifying the State with the Highest Profitability is to determine which state generates the most profit, allowing the Superstore to understand the factors contributing to its financial success
 
@@ -321,7 +321,7 @@ ORDER BY Total_Profits DESC
 ````
 
 
-**### State with the Lowest Profitability**
+**STATE WITH THE LOWEST PROFITABILITY**
 
 **Objective:** The objective of identifying the State with the Lowest Profitability is to determine which state generates the least profit, allowing the Superstore to understand the challenges and factors contributing to low financial performance.
 
@@ -342,7 +342,7 @@ ORDER BY
 	Total_Profits
 ````
 
-**### Top-Performing Cities**
+**TOP-PERFORMING CITIES**
 
 **Objective:** The objective of identifying Top-Performing Cities is to determine which cities generate the highest financial performance,
 
@@ -362,7 +362,7 @@ ORDER BY
 	Total_Profits DESC
 ````
 
-**### City-Level Discount Analysis**
+**CITY-LEVEL DISCOUNT ANALYSIS**
 
 **Objective:** The objective of City-Level Discount Analysis is to assess the distribution and impact of discounts across various cities. This analysis aims to identify patterns and trends in discount allocation, evaluate the effectiveness of discount strategies in driving sales, and understand regional variations.
 
@@ -380,7 +380,7 @@ ORDER BY
 	total_discount DESC
 ````
 
-**### OWEST PERFORMING CITIES**
+**LOWEST PERFORMING CITIES**
 
 **Objective:** The objective of identifying the lowest performing cities is to determine which cities generate the least financial performance,
 
@@ -401,7 +401,8 @@ Total_profits
 ````
 
 
-**CATEGORY WITH THE HIGHEST SALES AND PROFIT**
+**TOP SALES AND PROFIT CATEGORY**
+**Objective:** The objective of identifying the Top Sales and Profit Category is to determine which product category generates the highest sales revenue and profit.
 
 ````sql
 -- category that  brings in the highest sales and profits
@@ -419,7 +420,9 @@ ORDER BY
 	Total_Profits DESC
 ````
 
-**SUB-CATEGORY WITH THE HIGHEST SALES AND PROFIT**
+**SUB-CATEGORY WITH THE MAXIMUM SALES AND PROFIT**
+
+**Objective:** The objective of identifying the Sub-Category with Maximum Sales and Profit is to determine which product sub-category generates the highest sales revenue and profit.
 
 ````sql
 -- Subcategory that  brings in the highest sales and profits
@@ -438,8 +441,9 @@ ORDER BY
 ````
 
 
-**LOWEST PERFORMING REGION OF THE SUB-CATEGORY**
+**UNDERPERFORMING REGION OF THE SUB-CATEGORY**
 
+**Objective:** The objective of identifying the Underperforming Region of the Sub-Category is to determine which region generates the lowest sales and profit for a specific sub-category.
 ````sql
 -- lowest performing region of the Sub category 
 
@@ -458,7 +462,9 @@ ORDER BY
 	Total_Profits
 ````
 
-**TOTAL DISCOUNT PER CATEGORY**
+**BREAKDOWN OF DISCOUNTS PER CATEGORY**
+
+**Objective:** The objective of the Breakdown of Discounts by Category is to analyze how discounts are distributed across different product categories.
 
 ````sql
 --Total Discount per category
@@ -473,7 +479,9 @@ ORDER BY
 	total_discount DESC;
 ````
 
-**TOTAL DISCOUNT PER SUB-CATEGORY**
+**BREAKDOWN OF DISCOUNT PER SUB-CATEGORY**
+
+**Objective:** The objective of the Breakdown of Discounts by Sub-Category is to analyze how discounts are distributed across different product sub-categories.
 
 ````sql
 --Total Discount per Sub category
@@ -489,7 +497,9 @@ ORDER BY
 	total_discount DESC;
 ````
 
-**TOTAL DISCOUNT PER PRODUCT**
+**DISCOUNT TOTALS FOR EACH PRODUCT**
+
+**Objective:** The objective of analyzing discount totals for each product is to understand how discounts are allocated across individual products
 
 ````sql
 -- Total discount per product
@@ -505,7 +515,9 @@ ORDER BY
 	total_discount DESC
 ````
 
-** TOP 20 PROFITABLEL PRODUCT**
+**TOP 20 REVENUE-GENERATING PRODUCTS**
+**Objective:** The objective of identifying the Top 20 Revenue-Generating Products is to determine which products generate the highest revenue for the Superstore
+
 ````sql
 --TOP 20 products that are the most profitable
 
@@ -523,7 +535,8 @@ ORDER BY
 ````
 
 
-**BOTTOM 20 LEAST PROFITABLE PRODUCT**
+**LOWEST 20 PERFORMING PRODUCTS BY PROFIT**
+**Objective:** The objective of identifying the Lowest 20 Performing Products by Profit is to determine which products generate the least profit for the Superstore.
 
 ````sql
 --Bottom 20 products that are  least profitable
@@ -542,7 +555,9 @@ ORDER BY
 ````
 
 
-**TOTAL DISCOUNT PER SEGMENT**
+**DISCOUNT TOTALS FOR EACH SEGMENTS**
+
+**objective:** The objective of analyzing Discount Totals for Each Segment is to understand how discounts are distributed across different customer segments.
 
 ````sql
 -- Total discount per segment
@@ -558,7 +573,10 @@ ORDER BY
 	total_discount DESC
 ````
 
-**MOST SALES AND  PROFITABLE SEGMENT**
+**MOST PROFITABLE SALES SEGMENT**
+
+**Objective:** The objective of identifying the Most Profitable Sales Segment is to determine which customer segment generates the highest sales and profit for the Superstore.
+
 ````sql
 --segment that  makes the most of our profits and sales
 
@@ -575,7 +593,9 @@ ORDER BY
 	Total_Profits DESC;
 ````
 
-**TOTAL SALES AND PROFIT BY SHIP MODE**
+**REVENUE AND PROFIT DISTRIBUTION BY SHIP MODE**
+
+**Objective:** The objective of analyzing Revenue and Profit Distribution by Ship Mode is to understand how different shipping methods impact sales revenue and profitability.
 
 ````sql
 -- Total sales and profit by ship mode
@@ -591,7 +611,10 @@ FROM [superstore].[dbo].[sales]
 ````
 
 
-** TOP CUSTOMERS
+**TOP-TIER CLIENTS**
+
+**Objective:** The objective of identifying Top-Tier Clients is to recognize and analyze the most valuable customers in terms of sales revenue, profitability, and loyalty.
+
 ````sql
 -- Top customers 
   SELECT Customer_name, ROUND(SUM(Sales),2) as Total_Sales,
