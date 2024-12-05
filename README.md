@@ -19,9 +19,11 @@
 ##  Business Task
 
 **Objective:** 
+
 Optimize business operations, increase profitability, and enhance customer satisfaction by addressing identified irregularities and implementing targeted recommendations based on sales, profit, discount, and customer data analysis.
 
 **Scope:** 
+
 The analysis covers data from 2014 to 2017, focusing on sales performance, profit margins, discount strategies, regional performance, customer segmentation, and shipping methods.
 
 ### Key Areas of Focus:
@@ -78,9 +80,11 @@ The analysis covers data from 2014 to 2017, focusing on sales performance, profi
    - Regular monitoring and feedback mechanisms to ensure continuous improvement.
 
 **Outcome:**
-The project aims to optimize business operations, increase profitability, and enhance overall customer satisfaction by addressing the identified irregularities and implementing the tailored recommendations. This holistic approach will drive sustainable growth and improve the competitive positioning of the business in the market.
+
+This project aims to optimize business operations, increase profitability, and enhance overall customer satisfaction by addressing the identified irregularities and implementing the tailored recommendations. This holistic approach will drive sustainable growth and improve the competitive positioning of the business in the market.
 
 ## Data Source
+
 Superstore Sales data: The primary data used for this analysis is the "superstore.csv" file, containing detailed information about each sale made by the company
 [data source link](https://github.com/grandady/superstore/blob/main/Sample%20-%20Superstore.csv)
 
@@ -508,6 +512,7 @@ ORDER BY
 ### PRODUCTS
 
 **TOP 20 REVENUE-GENERATING PRODUCTS**
+
 **Objective:** The objective of identifying the Top 20 Revenue-Generating Products is to determine which products generate the highest revenue for the Superstore
 
 ````sql
@@ -528,6 +533,7 @@ ORDER BY
 
 
 **LOWEST 20 PERFORMING PRODUCTS BY PROFIT**
+
 **Objective:** The objective of identifying the Lowest 20 Performing Products by Profit is to determine which products generate the least profit for the Superstore.
 
 ````sql
