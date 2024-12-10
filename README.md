@@ -763,9 +763,9 @@ FROM [superstore].[dbo].[sales]
 
 
 
-### Recommendations:
+### RECOMMENDATIONS:
 
-**1.Loyalty Programs and Feedback Mechanisms:**
+**1.LOYALTY PROGRAMS AND FEEDBACK MECHANISM:**
 
 **- Observation:** Implement programs to reward top customers and encourage repeat purchases. Recognizing that your best customers are essential to your business's sustained growth, it's crucial to show appreciation and incentivize their continued loyalty.
 
@@ -773,7 +773,7 @@ FROM [superstore].[dbo].[sales]
 
 **- Feedback Mechanism:** Collect and analyze feedback from bottom-performing customers to improve their experience. Establish a systematic approach to gather insights through surveys, feedback forms, and direct conversations. Use this data to identify pain points, address issues, and tailor solutions that can transform dissatisfied customers into loyal advocates.
 
-**2. Shipping and Logistics:**
+**2. SHIPPING AND LOGISTICS:**
 
 **- Observation:** First Class shipping has higher profit margins but is underutilized. Despite its potential to significantly boost profitability, it seems customers are not opting for this shipping method as frequently as they could be. This underutilization represents a missed opportunity to enhance overall revenue.
 
@@ -781,7 +781,7 @@ FROM [superstore].[dbo].[sales]
 
 **- Cost Management:** Optimize shipping costs for Standard and Second Class to improve overall profitability. By negotiating better rates with shipping carriers, consolidating shipments, and improving packaging efficiency, the costs associated with Standard and Second Class shipping can be reduced. This will help enhance profitability across all shipping methods, not just First Class. Additionally, implementing technology to streamline logistics and improve tracking can lead to cost savings and improved customer satisfaction.
 
-**3. Quarterly and Seasonal Sales Strategy:**
+**3. QUARTERLY AND SEASONAL SALES STRATEGY:**
 
 **- Observation:** Sales are not balanced throughout the year, with certain quarters underperforming. This inconsistency in sales performance can lead to revenue fluctuations and operational challenges. Identifying the factors contributing to these variations, such as seasonal trends, market demand, and consumer behavior, is crucial for developing a more balanced sales strategy.
 
@@ -789,7 +789,7 @@ FROM [superstore].[dbo].[sales]
 
 **- Inventory Management:** Ensure sufficient stock for high-demand periods to avoid stockouts. Proper inventory planning and management are essential to meet customer demand during peak seasons. Utilize sales forecasts, historical data, and market trends to anticipate high-demand periods and adjust inventory levels accordingly. Implementing just-in-time inventory practices and maintaining strong relationships with suppliers can help ensure timely restocking. Additionally, leveraging technology, such as inventory management software, can provide real-time insights into stock levels and streamline the replenishment process.
 
-4. **Outliers and Data Integrity:**
+4. **OUTLIERS AND INTEGRITY:**
 
 **- Observation:** Irregularities such as inaccurate record-keeping and negative profit margins. These discrepancies can lead to misleading financial reports and impede the ability to make informed business decisions. Ensuring data integrity is crucial for maintaining trust and reliability in the business processes.
 
@@ -801,7 +801,7 @@ By addressing these outliers and implementing the tailored recommendations, you 
 
 ---
 
-### Limitations:
+### LIMITATIONS:
 
 Here are some of the potential limitations you might face in this project:
 
