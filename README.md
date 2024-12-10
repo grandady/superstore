@@ -763,7 +763,7 @@ FROM [superstore].[dbo].[sales]
 
 
 
-### Outliers and Recommendations:
+### Recommendations:
 
 **Objective:**
 Identify and address outliers in the data to enhance the accuracy and reliability of the analysis, and implement effective recommendations to improve business operations.
