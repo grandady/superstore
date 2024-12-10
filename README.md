@@ -312,6 +312,7 @@ FROM [dbo].[sales]
 GROUP BY State
 ORDER BY Total_Profits DESC
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr state](https://github.com/user-attachments/assets/5b7dcc0e-f543-4cd1-b099-bd809af80364)
 
@@ -339,6 +340,7 @@ GROUP BY
 ORDER BY 
 	Total_Profits
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr statelow](https://github.com/user-attachments/assets/9dd11239-ffbc-407a-9556-c41f36d722bd)
 
@@ -363,6 +365,7 @@ ORDER BY
 	total_discount DESC
 	;
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr state discount](https://github.com/user-attachments/assets/99d7f87a-301e-4f58-8137-9d1792428aa6)
 
@@ -390,6 +393,7 @@ GROUP BY
 ORDER BY 
 	Total_Profits DESC
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr city](https://github.com/user-attachments/assets/47ff32d0-e879-49ea-9af6-cbf91d0e9615)
 
@@ -415,6 +419,7 @@ GROUP BY
 ORDER BY
 Total_profits
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr city low](https://github.com/user-attachments/assets/b249c310-d94e-4c69-a4e8-60be5c829848)
 
@@ -439,6 +444,7 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr city discount](https://github.com/user-attachments/assets/22c64f05-c6a7-428c-a1cd-e03c3fedd594)
 
@@ -642,6 +648,7 @@ GROUP BY
 ORDER BY 
 	total_discount DESC
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr product discount](https://github.com/user-attachments/assets/ce8d332b-75dc-4a11-9d02-18e4958c4cf0)
 
@@ -735,6 +742,7 @@ FROM [superstore].[dbo].[sales]
  Order By 
 	Total_Profits DESC
 ````
+**This screenshot is only for reference and doesn’t contain all entries due to the issue of space*
 
 ![sspr top customer](https://github.com/user-attachments/assets/856863fc-810e-4789-9a62-69f5a36ec4fc)
 
