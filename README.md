@@ -827,7 +827,7 @@ Here are some of the potential limitations you might face in this project:
 
 6. **Privacy and Compliance:**
    - **Data Privacy:** Ensuring compliance with data privacy regulations is crucial. Proper handling and protection of customer data are essential to avoid legal issues.
-   - **Ethical Considerations:** The use of customer data for analysis and decision-making should be done ethically, respecting customer privacy and preferences.
+   - **Ethical Considerations:** Customer data should be used ethically for analysis and decision-making, respecting customer privacy and preferences.
 
 7. **Implementation:**
    - **Change Management:** Effectively implementing recommendations requires managing change within the organization, which can be challenging and time-consuming.
@@ -838,14 +838,14 @@ Addressing these limitations involves careful planning, robust data management p
 ## REFERENCES 
 
 1. **Data Sources:**
-   - Superstore Sales Data: Usually collected from internal sales databases or publicly available datasets such as the Superstore dataset provided by Tableau.
+   Superstore Sales Data is usually collected from internal sales databases or publicly available datasets, such as the Superstore dataset provided by Tableau.
    - Customer Data: Internal CRM (Customer Relationship Management) systems or external data providers.
 
 2. **Analytical Tools:**
    - **Data Analysis Tools:** 
      - Microsoft Excel: For data organization, calculations, and basic visualizations.
      - Python/R: For advanced data analysis and statistical modeling.
-     - Tableau/Power BI: For data visualization and dashboard creation.
+     - Tableau/Power BI: This is for data visualization and dashboard creation.
 
 3. **Methodologies:**
    - **Descriptive Statistics:** Used to summarize the main features of the data.
